@@ -1,0 +1,48 @@
+<div style="float: left; width: 100%;">
+    <br>
+    <p><font [size]="6">&nbsp; New Artist</font></p>
+</div> 
+
+<form [formGroup]="myForm" style="text-align: center;">
+    
+    <br>
+    <mat-form-field class="button-width">
+        <mat-label>Id</mat-label>
+        <input matInput formControlName="id" readonly="true">   
+    </mat-form-field>
+
+   <br>
+
+    <mat-form-field class="button-width">
+        <mat-label>Nombre</mat-label>
+        <input matInput formControlName="nombre" placeholder="Ingrese nombre...">  
+    </mat-form-field>
+
+    <br>
+ 
+    <mat-form-field class="button-width">
+         <mat-label>Foto</mat-label>
+         <input matInput formControlName="foto" placeholder="Ingrese una foto...">  
+    </mat-form-field>
+
+    <br>
+  
+    <mat-form-field class="button-width">
+        <mat-label>Deporte Favorito</mat-label>
+        <input matInput formControlName="deporte_favorito" placeholder="Ingrese su deporte favorito...">  
+    </mat-form-field>
+  
+    <br>
+
+    <mat-form-field class="button-width">
+        <mat-label>Puntos</mat-label>
+        <input matInput formControlName="puntos" placeholder="Ingrese sus puntos...">  
+    </mat-form-field>
+   
+    <br>
+    
+    <button mat-raised-button color="primary" (click)="saveArtist()" [disabled]="myForm.invalid">Guardar</button>
+    <span> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span>
+    <button mat-raised-button color="secondary" (click)="returnHome()">Cancelar</button>
+    
+</form>

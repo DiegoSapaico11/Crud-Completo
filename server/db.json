@@ -1,0 +1,67 @@
+{
+  "artist": [
+    {
+      "id": 1,
+      "name": "Sheldon",
+      "photo": "https://elcomercio.pe/resizer/QnmgEYZQ1_khTN9r_50DohwlcmQ=/1200x1200/smart/filters:format(jpeg):quality(75)/cloudfront-us-east-1.images.arcpublishing.com/elcomercio/3B55C2GCRFDHDBSY4EOPILR4GQ.jpeg",
+      "favorite_sport": "Futbol",
+      "points": 30
+    },
+    {
+      "id": 2,
+      "name": "Carlos",
+      "photo": "https://elcomercio.pe/resizer/T-acCZ5jaVnAZwzh4W7tyWYmFcU=/580x330/smart/filters:format(jpeg):quality(75)/cloudfront-us-east-1.images.arcpublishing.com/elcomercio/DVYVV4SNLRCEFMHMMNS4PYRAHI.jpg",
+      "favorite_sport": "Basket",
+      "points": 75
+    },
+    {
+      "id": 3,
+      "name": "Emilia",
+      "photo": "https://imagenes.20minutos.es/files/gallery_desktop_default_content/files/fp/uploads/imagenes/2022/07/08/brad-pitt.r_d.1675-1042.jpeg",
+      "favorite_sport": "Golf",
+      "points": 80
+    },
+    {
+      "id": 5,
+      "name": "Dann",
+      "photo": "https://peru21.pe/resizer/IpaFwAA_S7PV7Mrqavk2u-nETko=/1200x1200/smart/filters:format(jpeg):quality(75)/cloudfront-us-east-1.images.arcpublishing.com/elcomercio/ZWA6CVF4RVAZZKPVXMOAR54ZYU.jpg",
+      "favorite_sport": "Montañismo",
+      "points": 90
+    },
+    {
+      "id": 6,
+      "name": "Benito",
+      "photo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJokDrVFH4_WBwUg_o-xyGUEZsBGfYJKGZv2Wu2XuhpAPDF46X19EsIWo6F5QAYCPZnQQ&usqp=CAU",
+      "favorite_sport": "Tennis",
+      "points": 40
+    },
+    {
+      "id": 7,
+      "name": "Nombre del artista 7",
+      "photo": "https://upload.wikimedia.org/wikipedia/commons/c/cd/Pedro_Castillo_portrait.png",
+      "favorite_sport": "Deporte favorito",
+      "points": 85
+    },
+    {
+      "id": 8,
+      "name": "Nombre del artista 8",
+      "photo": "https://upload.wikimedia.org/wikipedia/commons/c/c8/Alan_Garc%C3%ADa_presidente_del_Per%C3%BA.jpg",
+      "favorite_sport": "Deporte favorito",
+      "points": 70
+    },
+    {
+      "id": 10,
+      "name": "Nombre del artista 10",
+      "photo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpdG87At8G7kC8_6on0JytKvV9XQOsmcBwOQ&usqp=CAU",
+      "favorite_sport": "Deporte favorito",
+      "points": 95
+    },
+    {
+      "id": 11,
+      "name": "Cristina Vidal",
+      "photo": "https://www.fotosdememes.com/wp-content/uploads/2022/04/Desde-ese-dia-algo-cambio-en-Lotso.jpg",
+      "favorite_sport": "Boxeo",
+      "points": 90
+    }
+  ]
+}

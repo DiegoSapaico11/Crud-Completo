@@ -1,0 +1,72 @@
+
+<div style="width: 100%;">
+    <div style="float: left; width: 50%;">
+        <br>
+        <p><font [size]="6">&nbsp; List of Artist</font></p>
+    </div>  
+    <div style="float: right; padding-right: 3%;">
+        <button routerLink="/admin/artists/new" mat-raised-button style="margin: 10px;">Nuevo</button>
+    </div> 
+</div>
+
+
+
+
+<div style="padding: 20px;">
+    
+    <div style="width: 100%;float: left;">
+        <mat-form-field >
+            <mat-label>Filtro</mat-label>
+            <input placeholder="Ingrese filtro..." matInput (keyup)="filterArtists($event)" #input>
+        </mat-form-field>
+    </div>
+
+    <table mat-table [dataSource]="dataSource"  class="mat-elevation-z8">
+
+        <ng-container matColumnDef="id">
+            <th mat-header-cell *matHeaderCellDef>ID</th>
+            <td mat-cell *matCellDef="let element">{{element.id}}</td>
+        </ng-container>
+        
+        <ng-container matColumnDef="name">
+            <th mat-header-cell *matHeaderCellDef>NOMBRE</th>
+            <td mat-cell *matCellDef="let element">{{element.name}}</td>
+        </ng-container>
+    
+        <ng-container matColumnDef="photo" >
+            <th mat-header-cell *matHeaderCellDef>FOTO</th>
+            <td mat-cell *matCellDef="let element" [ngStyle]="{'word-wrap': 'break-word'}"><img style="width: 50px;" src="{{element.photo}}" alt="img"></td>
+        </ng-container>
+    
+        <ng-container matColumnDef="favorite_sport">
+            <th mat-header-cell *matHeaderCellDef>DEPORTE FAV.</th>
+            <td mat-cell *matCellDef="let element">{{element.favorite_sport}}</td>
+        </ng-container>
+    
+        <ng-container matColumnDef="points">
+            <th mat-header-cell *matHeaderCellDef>PUNTOS</th>
+            <td mat-cell *matCellDef="let element">{{element.points}}</td>
+        </ng-container>
+    
+        <ng-container matColumnDef="actions">
+            <th mat-header-cell *matHeaderCellDef>ACCIONES</th>
+            <td mat-cell *matCellDef="let item">
+                <a style="cursor: pointer; color: red;" routerLink="/admin/artists/edit//{{item.id}}">
+                    <mat-icon>edit</mat-icon>
+                </a>        
+                <a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+                <a style="cursor: pointer;" (click)="deleteEmpleado(item.id)">
+                    <mat-icon>delete</mat-icon>
+                </a>       
+            </td>
+        
+        </ng-container>
+    
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns"></tr>
+    
+    </table>
+    <mat-paginator [pageSizeOptions]="[5, 10, 15, 20]" #paginator></mat-paginator>
+</div>
+
+
